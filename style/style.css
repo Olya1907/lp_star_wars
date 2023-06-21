@@ -193,4 +193,31 @@ body {
 }
 .cover__button-grey:hover {
   background: linear-gradient(180deg, #848e95 0%, #373A3C 100%);
+}
+
+.the-best {
+  height: 865px;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+}
+.the-best__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.the-best .image {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+}
+.the-best__title {
+  text-align: center;
+  padding-top: 16px;
+  font-size: 48px;
+  color: #FFF;
+}
+.the-best .subtitle {
+  color: #FFF;
+  font-size: 36px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
