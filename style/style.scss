@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+@import "_clear-styles.scss";
+
+html {
+  font-family: 'Arimo';
+  font-style: normal;
+}
+
+body {
+  background: #373a3c;
+}
+
+.page {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #373a3c;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__logo {
+    width: 96px;
+    height: 29px;
+    background: url(/image/header_logo.svg) no-repeat center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+
+    a {
+      font-size: 16px;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.5);
+
+      &:hover {
+        color: #8DD83D;
+      }
+    }
+  }
+
+  &__profile {
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.cover {
+  height: 885px;
+  background: url(/image/section_cover.jpg) no-repeat center;
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 297px;
+    padding-top: 100px;
+
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    color: #FFFFFF;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+
+  &__discription {
+    padding-top: 28px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+  }
+
+  &__block-button {
+    display: flex;
+    column-gap: 10px;
+    padding-top: 28px;
+  }
+
+  &__button-green {
+    padding: 8px 20px;
+    background: #8DD83D;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    &:hover {
+      background: #afef69;
+    }
+  }
+
+  &__button-grey {
+    padding: 8px 20px;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    &:hover {
+      background: linear-gradient(180deg, #848e95 0%, #373A3C 100%);
+    }
+  }
+}
