@@ -131,8 +131,8 @@ body {
 }
 
 .cover {
-  height: 885px;
-  background: url(/image/section_cover.jpg) no-repeat center;
+  height: calc(100vh - 60px);
+  background: url(/image/section_cover.jpg) no-repeat top;
 }
 .cover__container {
   width: 100%;
@@ -205,7 +205,7 @@ body {
   margin: 0 auto;
   padding: 0 30px;
 }
-.the-best .image {
+.the-best .image-svg {
   display: flex;
   justify-content: center;
   padding-top: 64px;
@@ -220,4 +220,197 @@ body {
   color: #FFF;
   font-size: 36px;
   text-align: center;
+}
+.the-best__cards {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  margin-top: 42px;
+}
+.the-best .card {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #8DD83D;
+  background: #FFF;
+}
+.the-best__content {
+  padding: 24px;
+}
+.the-best__subtitle {
+  color: #435766;
+  font-size: 18px;
+}
+.the-best__info {
+  padding-top: 12px;
+  padding-bottom: 28px;
+  color: #435766;
+  font-size: 24px;
+}
+.the-best__button {
+  width: 100%;
+  padding: 20px;
+  background-color: #8DD83D;
+  border-radius: 4px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.exclusive {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background: url(/image/exclusive_cover.jpg) no-repeat top;
+  background-size: cover;
+}
+.exclusive__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+.exclusive__title {
+  font-size: 36px;
+  color: #FFF;
+}
+.exclusive__cards {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 55px;
+       column-gap: 55px;
+  padding-top: 54px;
+}
+.exclusive__card {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #8DD83D;
+  background: #FFF;
+}
+.exclusive__content {
+  padding: 21px;
+}
+.exclusive__subtitle {
+  color: #435766;
+  font-size: 18px;
+}
+.exclusive__info {
+  padding-top: 12px;
+  padding-bottom: 28px;
+  color: #435766;
+  font-size: 21px;
+}
+.exclusive__button {
+  width: 100%;
+  padding: 20px;
+  background-color: #8DD83D;
+  border-radius: 4px;
+  color: #FFF;
+  font-size: 16px;
+}
+.exclusive__block-button {
+  margin-top: 90px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  color: #FFF;
+}
+
+.design-lab {
+  background: url(/image/design_lab.jpg) no-repeat center;
+  padding-top: 115px;
+  padding-bottom: 145px;
+}
+.design-lab__container {
+  width: 100%;
+  max-width: 1400px;
+  height: 220px;
+  margin: 0 auto;
+}
+.design-lab__info {
+  width: 100%;
+  width: 100%;
+  max-width: 500px;
+}
+.design-lab__title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 400;
+}
+.design-lab__discription {
+  display: flex;
+  width: 533px;
+  flex-direction: column;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+}
+.design-lab__block-button {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding-top: 28px;
+}
+.design-lab__button-grey {
+  padding: 20px;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFF;
+}
+.design-lab__button-green {
+  padding: 20px;
+  background: #8DD83D;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #FFF;
+}
+
+.footer {
+  height: 395px;
+  background-color: #373A3C;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 58px auto;
+}
+.footer__information {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  width: 130px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+.footer__info h3 {
+  color: #7DD42F;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer__info p {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer hr {
+  height: 1px;
+  margin: 50px 0 20px;
+  background: white;
+  opacity: 0.3500000238;
+}
+.footer__info-2 {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

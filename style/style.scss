@@ -64,8 +64,8 @@ body {
 }
 
 .cover {
-  height: 885px;
-  background: url(/image/section_cover.jpg) no-repeat center;
+  height: calc(100vh - 60px);
+  background: url(/image/section_cover.jpg) no-repeat top;
 
   &__container {
     width: 100%;
@@ -78,7 +78,6 @@ body {
     width: 100%;
     max-width: 297px;
     padding-top: 100px;
-
   }
 
   &__title {
@@ -152,7 +151,7 @@ body {
     padding: 0 30px;
   }
 
-  .image {
+  .image-svg {
     display: flex;
     justify-content: center;
     padding-top: 64px;
@@ -170,4 +169,235 @@ body {
     font-size: 36px;
     text-align: center;
   }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 55px;
+    margin-top: 42px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #8DD83D;
+    background: #FFF;
+  }
+
+  &__content {
+    padding: 24px;
+  }
+
+  &__subtitle {
+    color: #435766;
+    font-size: 18px;
+  }
+
+  &__info {
+    padding-top: 12px;
+    padding-bottom: 28px;
+    color: #435766;
+    font-size: 24px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 20px;
+    background-color: #8DD83D;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+  }
+
+}
+
+.exclusive {
+  // height: 880px;
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background: url(/image/exclusive_cover.jpg) no-repeat top;
+  background-size: cover;
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  &__title {
+    // text-align: center;
+    font-size: 36px;
+    color: #FFF;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 55px;
+    padding-top: 54px;
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #8DD83D;
+    background: #FFF;
+  }
+
+  &__content {
+    padding: 21px;
+  }
+
+  &__subtitle {
+    color: #435766;
+    font-size: 18px;
+  }
+
+  &__info {
+    padding-top: 12px;
+    padding-bottom: 28px;
+    color: #435766;
+    font-size: 21px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 20px;
+    background-color: #8DD83D;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+  }
+
+  &__block-button {
+    margin-top: 90px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    color: #FFF;
+  }
+
+}
+
+.design-lab {
+  background: url(/image/design_lab.jpg) no-repeat center;
+  padding-top: 115px;
+  padding-bottom: 145px;
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    height: 220px;
+    margin: 0 auto; // Не хватало
+  }
+  
+  &__info {
+    width: 100%;
+    // margin: 0 700px 0 167px; // Лишний
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  &__discription {
+    display: flex;
+    width: 533px;
+    flex-direction: column;
+
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__block-button {
+    display: flex;
+    // justify-content: center; // Лишний
+    column-gap: 15px;
+    padding-top: 28px;
+  }
+
+  &__button-grey {
+    padding: 20px;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFF;
+  }
+
+  &__button-green {
+    padding: 20px;
+    background: #8DD83D;
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFF;
+  }
+}
+
+.footer {
+  height: 395px;
+  background-color: #373A3C;
+
+  &__container {
+    display: flex; //
+    flex-direction: column; // выравнивание по вертикали
+    width: 100%;
+    max-width: 1400px;
+    margin: 58px auto;
+  }
+
+  &__information {
+    display: flex;
+    justify-content: space-between; // распределение по всей ширине
+  }
+
+  &__info {
+    width: 130px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px; // задать междустрочный отступ между элементами блока
+    // column-gap: 100px; // задать отступ между столбцами-элементами блока
+
+    h3 {
+      color: #7DD42F;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    p {
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  hr {
+    height: 1px;
+    margin: 50px 0 20px;
+    background: white;
+    opacity: 0.3500000238418579;
+  }
+
+  &__info-2 {
+    display: flex;
+    justify-content: space-between;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
 }
